@@ -1,0 +1,54 @@
+*{
+    background-color: black;
+}
+/* inicio estilos nav */
+nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 45px;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover{
+    color: #e377cb;
+}
+nav img{
+    height: 10vh;
+    width: 14vh;
+}
+/* fin estilos nav */
+
+/* inicio seccion INICIO */
+/* fin seccion INICIO */
+
+/* inicio seccion Albumes */
+
+main .albumes{
+    display: flex;
+    gap: 5%;
+}
+main .albumes p{
+    color: white;
+}
+
+main .albumes .card-album{
+    background: #e377cb;
+}
+
+main .albumes .hipervinculo{
+    text-decoration: none;
+    color: white;
+}
+
+/* estilos imagenes */
+
+main .albumes .img-album{
+    height: 55%;
+    width: 55%;
+}
+/* Fin seccion albumes */

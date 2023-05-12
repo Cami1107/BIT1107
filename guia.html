@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer HTML</title>
+</head>
+<body>
+    <!-- Entre mas sencilla la etiqueta mejor -->
+    <!-- etiquetas de contenido -->
+        <!-- Etiquetas titulares -->
+        <h1></h1>
+        <!-- para adjuntar video, se puede con git y mp3-->
+        <!-- para adjuntar de Youtube, se le da en el boton compartir, iframe -->
+        <video src="avenged_sevenfold-logo.jpg" alt="video"></video> 
+
+        <!-- Lista -->
+        <ol>
+            <li>1</li>
+            <li>2</li>
+        </ol>
+        <ul>
+            <li>1</li>        
+            <li>2</li>        
+        </ul>
+        <!-- etiquetas de formato, no recomendables porque representan algo estetico. eso se hace en el CSS -->
+        <strong></strong>
+        <i></i>
+        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+        <em>Enfasis</em>
+        <b>Negrilla</b>
+    <!-- etiquetas contenedoras -->
+    <!-- para generar grupos de elementos dispersos, no tiene diseños sino son para organizar -->
+    <div>
+        <h1>división de segmentos, es un mal eso</h1>
+        <h2>Cada vez que uses un div, hazte la pregunta. ¿Existe alguna etiqueta semantica que haga la misma función?</h2>
+    </div>
+
+    <span>
+        <h1>También funciona como div, pero se utiliza dentro de un párrafo, especialmente para meter elementos decorativos dentro de un paárrafo</h1>
+    </span>
+
+    <br>
+    <br>
+
+    <!-- etiquetas semanticas -->
+    <header>Headrer</header>
+    <main>Main
+        <section></section>
+    </main>
+    <footer>Footer</footer>
+    <aside>
+        <!-- representa banners, no es contenido de la pagina, es paarte del contenido -->
+        Aside
+    </aside>
+    <nav>
+        <a href="#"></a>
+        <!-- no es necesario hacer un lu, li -->
+    </nav>
+    <article></article>
+    <!-- action, a donde se envían los datos -->
+    <!-- method, como se van a mandar los datos -->
+    <form action="#" method="">
+        <!-- fieldset engloba los elementos de un formulario -->
+        <fieldset>
+            <label for="search">Search</label>
+            <input type="text" id="search" name="search">
+            <label for="search2">Search2</label>
+            <input type="text" id="search2" name="search2">
+        </fieldset>
+        <fieldset>
+            <!-- para seleccionar una opción -->
+            <label for="opt-1">opt-1</label>
+            <label for="opt-2">opt-2</label>
+            <input type="radio" id="opt-1" name="opt-1" value="1">
+            <input type="radio" id="opt-2" name="opt-2" value="2">
+        </fieldset>
+    </form>
+    <picture></picture>
+    <figure></figure>
+    <details>
+        <summary><h2>H2 en sumarry</h2></summary>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod quibusdam sapiente, ratione totam, velit dolor minima delectus qui consequatur nostrum. Expedita error id deleniti cumque hic quo voluptas saepe.</p>
+    </details>
+</body>
+</html>
