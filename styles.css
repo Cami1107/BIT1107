@@ -1,6 +1,9 @@
+
 *{
     background-color: black;
 }
+
+
 /* inicio estilos nav */
 nav{
     display: flex;
@@ -52,3 +55,40 @@ main .albumes .img-album{
     width: 55%;
 }
 /* Fin seccion albumes */
+
+/* inicio estilos participantes */
+.integrantes{
+    display: flex;
+    gap: 5%;
+}
+
+.integrantes .card-integrante p,h2{
+    color: white;
+}
+
+/* inicio estilos formularios */
+.contacto{
+    position: relative;
+}
+.contacto fieldset{
+    margin-top: 5%;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.contacto fieldset input{
+    color: white;
+    border-width: 0px;
+    border-style: solid;
+    text-align: center;
+
+}
+
+.contacto fieldset input:hover{
+    border-style: solid;
+    border-width: 0 0 2px 0;
+}
+
+
+/* fin estilos formularios */
