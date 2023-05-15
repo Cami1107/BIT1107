@@ -17,6 +17,18 @@
             <a href="">Eventos</a></li>
             <a href="">Videos Musicales</a></li>
             <a href="">Contacto</a></li>
+            <a href="#" class="toolbar-icon">&#9776;</a>
+            <div class="toolbar">
+                <button id="toggleMenu">Menú</button>
+                <ul id="menuItems">
+                  <li><a href="#">Homes</a></li>
+                  <li><a href="">Albumes</a></li>
+                  <li><a href="">Integrantes</a></li>
+                  <li><a href="">Eventos</a></li>
+                  <li><a href="">Videos Musicales</a></li>
+                  <li><a href="">Contacto</a></li>
+                </ul>
+              </div>
         </nav>
     </header>
     <main>
@@ -29,25 +41,23 @@
         <section class="albumes">
             <div class="card-album">
                 <img src="img/Nighmare-album.png" alt="Album-Nightmare" class="img-album">
-                <!-- preguntar si puedo usar una etiqueta de semantica -->
-                    <a href="#" class="hipervinculo">
-                        <h2 class="nombre">Nightmare</h2>
-                    </a>
+                <a href="#" class="hipervinculo">
+                    <h2 class="nombre">Nightmare</h2>
+                </a>
             </div>
 
             <div class="card-album">
                 <img src="img/Hail-to-the-king.jpg" alt="Album-city-of-evil" class="img-album">
-                <!-- preguntar si puedo usar una etiqueta de semantica -->
-                    <a href="#" class="hipervinculo">
-                        <h2 class="nombre">City of evil</h2>
-                    </a>
+                <a href="#" class="hipervinculo">
+                    <h2 class="nombre">City of Evil</h2>
+                </a>
             </div>
+
             <div class="card-album">
                 <img src="img/The-stage-album.jpg" alt="Album-city-of-evil" class="img-album">
-                <!-- preguntar si puedo usar una etiqueta de semantica -->
-                    <a href="#" class="hipervinculo">
-                        <h2 class="nombre">City of evil</h2>
-                    </a>
+                <a href="#" class="hipervinculo">
+                    <h2 class="nombre">The Stage</h2>
+                </a>
             </div>
             <!-- Hacer un carrusel de tarjetas -->
         </section>
@@ -57,7 +67,7 @@
             <div class="card-integrante">
                 <img src="" alt="">
                 <h2>M. Shadows</h2>
-                <p>Vocalista principal, piano y guitarra ritmica</p>
+                <p>Vocalista principal, piano y guitarra rítmica</p>
             </div>
             <div class="card-integrante">
                 <img src="" alt="">
@@ -67,26 +77,26 @@
             <div class="card-integrante">
                 <img src="" alt="">
                 <h2>Zacky Vengeance</h2>
-                <p>guitarrista ritmico, y coros</p>
+                <p>Guitarrista rítmico y coros</p>
             </div>
             <div class="card-integrante">
                 <img src="" alt="">
                 <h2>Johnny Christ</h2>
-                <p>Bajista, y coros</p>
+                <p>Bajista y coros</p>
             </div>
             <div class="card-integrante">
                 <img src="" alt="">
                 <h2>Brooks Wackerman</h2>
                 <p>Baterista</p>
             </div>
-                <!-- Con circulitos presentar a cada miembro cuadricula 4 x 4 -->
+            <!-- Con circulitos presentar a cada miembro en una cuadrícula 4 x 4 -->
         </section>
         <!-- Videos Musicales -->
         <!-- Contacto -->
         <section class="contacto">
-            <p>Suscribete para que te llegue información sobre nuestra música</p>
+            <p>Suscríbete para recibir información sobre nuestra música.</p>
             <form action="" method="post">
-                            <!-- Un forms, donde salga mensaje de confirmación bonito -->
+                <!-- Un formulario con un mensaje de confirmación elegante -->
                 <fieldset>
                     <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Email">
@@ -103,10 +113,9 @@
         </section>
     </main>
     <footer>
-        <!-- link a redes sociales -->
-        <div class="infor">
-            
-        </div>
+        <!-- Enlaces a redes sociales -->
+        <div class="infor"></div>
     </footer>
+    <script src="functions.js"></script>
 </body>
 </html>

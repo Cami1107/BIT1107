@@ -1,94 +1,235 @@
-
-*{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     background-color: black;
-}
+    color: white;
+  }
 
-
-/* inicio estilos nav */
-nav{
+  /* Estilos generales de la barra de navegación */
+  nav {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
-    margin-top: 45px;
+    justify-content: center;
     align-items: center;
-}
-nav a{
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
     text-decoration: none;
-    color: aliceblue;
-}
+    color: #333;
+  }
 
-nav a:hover{
-    color: #e377cb;
-}
-nav img{
-    height: 10vh;
-    width: 14vh;
-}
-/* fin estilos nav */
-
-/* inicio seccion INICIO */
-/* fin seccion INICIO */
-
-/* inicio seccion Albumes */
-
-main .albumes{
+  nav a.logo {
     display: flex;
-    gap: 5%;
-}
-main .albumes p{
-    color: white;
-}
+    align-items: center;
+  }
 
-main .albumes .card-album{
+  nav img {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+  }
+    
+  /* Estilos para el menu desplegable responsive del nav  */
+
+  .toolbar {
+    display: none;
+  }
+  
+  .toolbar button {
+    display: flex;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: flex-start;
+  }
+  
+  .toolbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .toolbar ul li {
+    margin: 10px 0;
+  }
+
+ /* fin de toolbar  */
+
+  main .inicio {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main .albumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  main .albumes .card-album {
     background: #e377cb;
-}
-
-main .albumes .hipervinculo{
-    text-decoration: none;
-    color: white;
-}
-
-/* estilos imagenes */
-
-main .albumes .img-album{
-    height: 55%;
-    width: 55%;
-}
-/* Fin seccion albumes */
-
-/* inicio estilos participantes */
-.integrantes{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  main .albumes .card-album:hover {
+    transform: scale(1.1);
+  }
+  
+  main .albumes .img-album {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .main .integrantes {
     display: flex;
-    gap: 5%;
-}
-
-.integrantes .card-integrante p,h2{
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .main .integrantes .card-integrante {
+    flex-basis: 300px; 
+    background: #e377cb;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .main .integrantes .card-integrante:hover {
+    transform: scale(1.1);
+  }
+  
+  .main .integrantes .card-integrante p,
+  .main .integrantes .card-integrante h2 {
+    font-size: 16px;
     color: white;
-}
-
-/* inicio estilos formularios */
-.contacto{
+    margin-top: 10px;
+  }
+  
+  .contacto {
     position: relative;
-}
-.contacto fieldset{
-    margin-top: 5%;
-    color: white;
-    width: 50%;
     text-align: center;
-}
-
-.contacto fieldset input{
-    color: white;
-    border-width: 0px;
-    border-style: solid;
+    padding: 20px;
+  }
+  
+  .contacto p {
+    margin-bottom: 10px;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contacto fieldset {
+    margin: 10px;
+    padding: 10px;
+    border: none;
     text-align: center;
+  }
+  
+  .contacto fieldset input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contacto fieldset input:hover {
+    border: 2px solid #e377cb;
+  }
+  
+  footer {
+    background: #e377cb;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .main .integrantes .card-integrante {
+      flex-basis: 45%;
+    }
+  
+    main .albumes {
+      gap: 10px;
+    }
+  
+    main .integrantes {
+      grid-template-columns: 1fr;
+    }
+  }
 
+
+  @media screen and (max-width: 480px) {
+
+      nav a:not(:first-child),
+
+      nav img {
+        display: none;
+      }
+    
+      .toolbar {
+        display: block;
+      }
+    
+      .toolbar ul {
+        display: none;
+      }
+
+      nav {
+          flex-direction: column;
+      }
+      
+      nav a.logo {
+          margin-bottom: 10px;
+      }
+  }
+  
+
+  @media (max-width: 480px) {
+    .main .integrantes .card-integrante {
+      flex-basis: 100%; 
+    }
+  
+    .main .integrantes .card-integrante p,
+    .main .integrantes .card-integrante h2 {
+      font-size: 14px;
+    }
+    main .albumes .card-album {
+    padding: 10px;
+    }
+
+    main .albumes .img-album {
+    width: 150px;
+    height: 150px;
+    }
+
+    main .integrantes .card-integrante p,
+    main .integrantes .card-integrante h2 {
+    font-size: 12px;
+    }
+
+    .contacto fieldset input {
+    width: 160px;
+    }
 }
-
-.contacto fieldset input:hover{
-    border-style: solid;
-    border-width: 0 0 2px 0;
-}
-
-
-/* fin estilos formularios */
