@@ -85,6 +85,15 @@
     padding: 20px;
   }
   
+  main .albumes-name{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+  }
+
+  main .albumes-name:hover{
+    color: #e377cb;
+  }
   main .albumes {
     display: flex;
     flex-wrap: wrap;
@@ -116,9 +125,18 @@
   }
   /* inicio estilos integrantes */
   .integrantes {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 41px;
+    justify-content: center;
+    margin-bottom: 8%;
+  }
+
+  main .name-integrantes{
+    justify-content: center;
+    display: flex;
+    font-size: xxx-large;
+    margin-top: 8%;
   }
   
   .card-integrante {
@@ -156,6 +174,7 @@
   
   .contacto p {
     margin-bottom: 10px;
+    font-size: xxx-large;
   }
   
   .contacto form {
@@ -181,9 +200,15 @@
   }
   
   .contacto fieldset input:hover {
-    border: 1px solid var(--main-color-backgrong);
+    border: 1px solid white;
   }
 
+  .contacto .enviar{
+    background: var(--main-color-backgrong);
+  }
+
+
+/* inicio estilos footer */
   
   footer {
     padding: 20px;
