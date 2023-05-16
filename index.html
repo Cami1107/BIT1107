@@ -10,86 +10,105 @@
 <body>
     <header>
         <nav>
-            <a href="#">Homes</a></li>
-            <a href="">Albumes</a></li>
-            <a href="">Integrantes</a></li>
+            <a href="#">Homes</a>
+            <a href="#albumes">Albumes</a>
+            <a href="#integrantes">Integrantes</a>
                 <img src="img/avenged_sevenfold-logo.jpg" alt="Logo-de-la-banda">
-            <a href="">Eventos</a></li>
-            <a href="">Videos Musicales</a></li>
-            <a href="">Contacto</a></li>
+            <a href="#eventos">Eventos</a>
+            <a href="#video">Videos</a>
+            <a href="#contacto">Contacto</a>
             <a href="#" class="toolbar-icon">&#9776;</a>
             <div class="toolbar">
                 <button id="toggleMenu">Menú</button>
-                <ul id="menuItems">
-                  <li><a href="#">Homes</a></li>
-                  <li><a href="">Albumes</a></li>
-                  <li><a href="">Integrantes</a></li>
-                  <li><a href="">Eventos</a></li>
-                  <li><a href="">Videos Musicales</a></li>
-                  <li><a href="">Contacto</a></li>
-                </ul>
+                <div id="menuItems">
+                  <a href="#">Homes</a>
+                  <a href="">Albumes</a>
+                  <a href="">Integrantes</a>
+                  <a href="">Eventos</a>
+                  <a href="">Videos</a>
+                  <a href="">Contacto</a>
+                </div>
               </div>
         </nav>
     </header>
     <main>
-        <section class="inicio">
+        <section class="inicio" id="home">
+            <p>IT´S YOUR F*UCKIN NIGHTMARE</p>
             <figure>
                 <img src="img/fondo-removebg-preview.png" alt="Logo-banda-grande">
             </figure>
         </section>
         <!-- albumes -->
-        <section class="albumes">
-            <div class="card-album">
+        <section class="albumes" id="albumes">
+            <P>ALBUMES</P>
+            <article class="card-album">
                 <img src="img/Nighmare-album.png" alt="Album-Nightmare" class="img-album">
                 <a href="#" class="hipervinculo">
                     <h2 class="nombre">Nightmare</h2>
                 </a>
-            </div>
+            </article>
 
-            <div class="card-album">
+            <article class="card-album">
                 <img src="img/Hail-to-the-king.jpg" alt="Album-city-of-evil" class="img-album">
                 <a href="#" class="hipervinculo">
                     <h2 class="nombre">City of Evil</h2>
                 </a>
-            </div>
+            </article>
 
-            <div class="card-album">
+            <article class="card-album">
                 <img src="img/The-stage-album.jpg" alt="Album-city-of-evil" class="img-album">
                 <a href="#" class="hipervinculo">
                     <h2 class="nombre">The Stage</h2>
                 </a>
-            </div>
-            <!-- Hacer un carrusel de tarjetas -->
+            </article>
+            <article class="card-album">
+                <img src="img/The-stage-album.jpg" alt="Album-city-of-evil" class="img-album">
+                <a href="#" class="hipervinculo">
+                    <h2 class="nombre">The Stage</h2>
+                </a>
+            </article>
         </section>
 
-        <section class="integrantes">
+        <section class="integrantes" id="integrantes">
             <!-- Integrantes -->
-            <div class="card-integrante">
-                <img src="" alt="">
-                <h2>M. Shadows</h2>
-                <p>Vocalista principal, piano y guitarra rítmica</p>
+            <p>INTEGRANTES</p>
+            <div class="fila-1">
+                <article class="card-integrante">
+                    <img src="img/mr.shadow.jpg" alt="shadow">
+                    <h2>M. Shadows</h2>
+                    <p>Vocalista principal, piano y guitarra rítmica</p>
+                  </article>
+                  <article class="card-integrante">
+                    <img src="img/Synyster Gates.jpg" alt="">
+                    <h2>Synyster Gates</h2>
+                    <p>Guitarrista principal, piano y coros</p>
+                  </article>
+                </div>
+                <div class="fila-2">
+                    <article class="card-integrante">
+                        <img src="img/Johnny Christ.jpg" alt="">
+                        <h2>Johnny Christ</h2>
+                        <p>Bajista y coros</p>
+                    </article>
+                    <article class="card-integrante">
+                      <img src="img/Zacky Vengeance.jpg" alt="">
+                      <h2>Zacky Vengeance</h2>
+                      <p>Guitarrista rítmico y coros</p>
+                    </article>
             </div>
-            <div class="card-integrante">
-                <img src="" alt="">
-                <h2>Synyster Gates</h2>
-                <p>Guitarrista principal, piano y coros</p>
+                
+            <div class="fila-3">
+                <article class="card-integrante">
+                  <img src="img/Brooks Wackerman.jpg" alt="">
+                  <h2>Brooks Wackerman</h2>
+                  <p>Baterista</p>
+                </article>
+
             </div>
-            <div class="card-integrante">
-                <img src="" alt="">
-                <h2>Zacky Vengeance</h2>
-                <p>Guitarrista rítmico y coros</p>
-            </div>
-            <div class="card-integrante">
-                <img src="" alt="">
-                <h2>Johnny Christ</h2>
-                <p>Bajista y coros</p>
-            </div>
-            <div class="card-integrante">
-                <img src="" alt="">
-                <h2>Brooks Wackerman</h2>
-                <p>Baterista</p>
-            </div>
-            <!-- Con circulitos presentar a cada miembro en una cuadrícula 4 x 4 -->
+          </section>
+
+        <section class="videos">
+            <p>MIRA NUESTROS VIDEOS</p>
         </section>
         <!-- Videos Musicales -->
         <!-- Contacto -->
@@ -109,12 +128,26 @@
                     <label for="edad"></label>
                     <input type="number" id="txt-edad" name="txt-edad" placeholder="Edad">
                 </fieldset>
+
+                <input type="submit" value="Enviar">
             </form>
         </section>
     </main>
     <footer>
-        <!-- Enlaces a redes sociales -->
-        <div class="infor"></div>
+        <nav id="nav-footer">
+            <a href="#home">Home</a>
+            <a href="#albumes">Albumes</a>
+            <a href="#integrantes">Integrantes</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <article>
+          <p>2023 - Todos los derechos reservados</p>
+        </article>
+        <article>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </article>
     </footer>
     <script src="functions.js"></script>
 </body>
