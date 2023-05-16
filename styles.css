@@ -25,6 +25,7 @@
     background-color: #000000;
     padding: 10px;
     font-weight: 500;
+    margin-right: 3%;
   }
  
   html {
@@ -319,5 +320,11 @@ footer .enlace-iconos img{
 }
 
 footer .enlace-iconos{
+  justify-content: center;
+}
+
+main .name-videos{
+  font-size: xxx-large;
+  display: flex;
   justify-content: center;
 }
