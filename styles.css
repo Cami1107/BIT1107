@@ -192,15 +192,21 @@
     text-align: center;
   }
   
-  .contacto fieldset input {
+  .contacto fieldset input, .button-form {
     padding: 10px;
     width: 200px;
     border: none;
     border-radius: 5px;
     background: var(--main-color-backgrong);
   }
-  
-  .contacto fieldset input:hover {
+
+  .button-form {
+    max-width: 200px;
+    margin: 5px 10px;
+    color: white;
+  }
+   
+  .contacto fieldset input:hover, .button-form {
     border: 1px solid white;
   }
 
@@ -263,7 +269,15 @@
     /* finish toolbar menu */
 
     .integrantes {
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .fila-1,.fila-2,.fila-3 {
+      width: 100%;
+      max-width: 300px;
     }
     main .albumes .card-album {
     padding: 10px;
@@ -276,6 +290,12 @@
 
     .contacto fieldset input {
     width: 160px;
+    }
+
+    .button-form {
+      max-width: 160px;
+      margin: 5px 10px;
+      color: white
     }
 }
 
