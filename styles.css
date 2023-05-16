@@ -63,25 +63,19 @@
     display: none;
   }
   
-  .toolbar button {
-    display: flex;
-    background: none;
-    border: none;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    cursor: pointer;
-    justify-content: flex-start;
-  }
-  
-  .toolbar #menuItems {
+  .toolbar-menuItems {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: none;
   }
   
-  .toolbar #menuItems a {
+  .toolbar-menuItems a {
     margin: 10px 0;
+  }
+
+  .toolbar-icon {
+    display: none;
   }
 
  /* fin de toolbar  */
@@ -207,34 +201,41 @@
     }
   }
 
-
-  @media screen and (max-width: 480px) {
-
-      nav a:not(:first-child),
-
-      nav img {
-        display: none;
-      }
-    
-      .toolbar {
-        display: block;
-      }
-    
-      .toolbar ul {
-        display: none;
-      }
-
-      nav {
-          flex-direction: column;
-      }
-      
-      nav a.logo {
-          margin-bottom: 10px;
-      }
-  }
-  
-
   @media (max-width: 480px) {
+
+    
+
+    /* Estilos del nav 480px*/
+    .primary-nav {
+      display: none;
+    }
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    nav a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    /* fin Estilos del nav 480px*/
+
+    /* start Toolbar menu */
+    .toolbar {
+      display: block;
+    }
+  
+    .toolbar-menuItems {
+      display: none;
+    }
+  
+    .toolbar-icon {
+      display: block;
+      
+    }
+
+    /* finish toolbar menu */
+
     .integrantes {
       grid-template-columns: repeat(2, 1fr);
     }

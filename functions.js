@@ -1,6 +1,14 @@
-document.getElementById('toggleMenu').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleMenu = document.getElementById('toggleMenu');
   const menuItems = document.getElementById('menuItems');
-  menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
-});
 
-console.log('functions.js debbug here');
+  toggleMenu.addEventListener('click', function() {
+    if (menuItems.style.display === 'block') {
+      menuItems.style.display = 'none';
+    } else {
+      menuItems.style.display = 'block';
+    }
+  });
+
+  console.log('script.js debug here');
+});
