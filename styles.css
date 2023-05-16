@@ -183,14 +183,15 @@
     width: 200px;
     border: none;
     border-radius: 5px;
+    background: var(--main-color-backgrong);
   }
   
   .contacto fieldset input:hover {
-    border: 2px solid #e377cb;
+    border: 1px solid var(--main-color-backgrong);
   }
+
   
   footer {
-    background: #e377cb;
     padding: 20px;
     text-align: center;
   }
