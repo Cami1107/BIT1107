@@ -287,4 +287,11 @@ footer nav a:hover{
   text-decoration: underline;
 }
 
+footer .enlace-iconos img{
+  width: 3.5%;
+  margin-top: 2%;
+}
 
+footer .enlace-iconos{
+  justify-content: center;
+}
